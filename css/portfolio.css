@@ -1,0 +1,410 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    background: linear-gradient(to right, rgba(185, 233, 255, 0.4) 0 100%), url(../img/fondo.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* inicio header */
+header {
+    background-image: url(../img/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    flex: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    color: white;
+    animation: slide-down 1.8s ease-out;
+    -moz-animation: slide-down 1.8s ease-out;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+
+#titulo h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+}
+
+#titulo h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+}
+
+/* fin header */
+
+/* inicio botonera */
+nav {
+    background-color: #1095c2;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px black;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgba(214, 214, 214, 0.804);
+}
+
+nav ul li a.activo {
+    background-color: #107c9f;
+}
+
+/* fin botonera */
+
+
+/* inicio main  */
+
+
+
+.columnas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2%;
+    margin: 0%;
+    justify-content: center;
+}
+
+#mifoto {
+    justify-content: center;
+    width: 20%;
+}
+
+#mifoto img {
+    width: 80%;
+}
+
+/* fin main */
+
+/* inicio aside */
+.parte1 {
+    width: 30%;
+}
+
+.parte1 h2 {
+    color: #afafaf;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+}
+
+.experiencia {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.parte1 ul {
+    text-align: justify;
+}
+
+
+/* fin aside */
+
+
+/* inicio article */
+.parte2 {
+    width: 50%;
+    padding-left: 3%;
+}
+
+.parte2 h2 {
+    color: #afafaf;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+
+}
+
+.parte2 ul {
+    text-align: justify;
+}
+
+#linktabla {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #1095c2;
+}
+
+#linktabla a {
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 2px #afafaf;
+
+}
+
+/* fin article */
+
+@media (max-width:1000px) {
+    #mifoto {
+        width: 40%;
+        text-align: center;
+    }
+
+    .parte1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .parte1 ul {
+        text-align: center;
+        list-style: none;
+        font-style: italic;
+    }
+
+    .parte2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* fin home */
+
+/* inicio footer  */
+footer {
+    background-color: #afafaf;
+    box-shadow: inset 0 0 20px black;
+    clear: both;
+    color: #000000;
+    margin-top: auto;
+    display: table;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+/* fin footer */
+
+/* inicio mi perfil */
+
+.miperfil h1 {
+    text-align: center;
+    color: #afafaf;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+}
+
+.miperfilcol {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.miperfilcol h1 {
+    color: black
+}
+
+.miperfilcol h2 {
+    text-align: center;
+    color: #afafaf;
+}
+
+.miperfilcol ul {
+    text-align: left;
+}
+
+.columnap {
+    border: solid 3px #1095c2;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    flex: 20%;
+}
+
+
+@media (max-width:1200px) {
+    .columnap {
+        flex: 40%;
+    }
+}
+
+@media (max-width:800px) {
+    .columnap {
+        flex: 100%;
+    }
+}
+
+#micv h1 {
+    text-align: center;
+    border: solid 3px#1e9a83;
+    color: #1e9a83;
+}
+
+/* fin mi perfil */
+
+
+/* inicio experiencia laboral ampliada */
+
+#h1exp {
+    text-align: center;
+    color: #afafaf;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+}
+
+.table-responsive {
+    padding-top: 2%;
+}
+
+.empresa {
+    color: #afafaf;
+}
+
+#volverhome {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #1095c2;
+    margin: 50px 0 50px 0;
+}
+
+#volverhome a {
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 2px #afafaf;
+
+}
+
+/* fin experiencia laboral ampliada */
+
+
+
+/* inicio contacto */
+
+.contactos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+
+.contactos h1 {
+    color: #afafaf;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+}
+
+
+.contacto {
+
+    text-align: center;
+}
+
+.datos {
+    text-align: center;
+
+}
+
+
+.datos a {
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    color: #000000;
+    text-shadow: 2px 2px 2px #afafaf;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+    background-color: antiquewhite;
+}
+
+.formulario input[type="text"] {
+    background-color: antiquewhite;
+}
+
+.formulario input[type="button"] {
+    background: #1e9a83;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+
+.formulario input[type="button"]:hover {
+    background-color: #7dd1c2;
+}
+
+/* fin contacto */
+
+/* inicio page enviar */
+
+#h1enviar {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #afafaf;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+}
+
+.counter{
+    background-color: #afafaf;
+    box-shadow: inset 0 0 20px black;
+text-align: center;
+border: #000000 solid 2px;}
+
+.counter p{color: #1095c2;
+font-size: 40px;}
+
+/* fin page enviar */
