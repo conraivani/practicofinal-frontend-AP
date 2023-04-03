@@ -340,6 +340,7 @@ footer {
 .contacto {
 
     text-align: center;
+    padding-right: 2%;
 }
 
 .datos {
@@ -358,6 +359,9 @@ footer {
 
 .formulario p {
     display: flex;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
 }
 
 .formulario p label {
@@ -366,15 +370,18 @@ footer {
     align-items: center;
 }
 
-.formulario textarea {
+.formulario p textarea {
     resize: none;
     height: 150px;
     background-color: antiquewhite;
+    width: 100%;
+} 
+
+ .formulario input[type="text"] {
+    background-color: antiquewhite;
+    width: 100%;
 }
 
-.formulario input[type="text"] {
-    background-color: antiquewhite;
-}
 
 .formulario input[type="button"] {
     background: #1e9a83;
